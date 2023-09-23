@@ -19,8 +19,8 @@
 
 // }
 
-let arr=[1,2,3,4,5,6,7,8]
-let arr1=["a","b","c","d"]
+// let arr=[1,2,3,4,5,6,7,8]
+// let arr1=["a","b","c","d"]
 //  arr.push(5)
 // arr.pop()
 // arr.shift()
@@ -62,4 +62,11 @@ let arr1=["a","b","c","d"]
 // let arr6=[1,6,3,7,5]
 // arr6.sort()
 // console.log(arr6);
+let arr=[1,2,3,4,5,6,7,8]
+
+// node 
+
+let sum=0;
+arr.map(e=> sum += e);
+console.log(sum);
 
