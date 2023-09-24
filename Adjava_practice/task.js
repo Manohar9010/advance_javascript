@@ -100,6 +100,28 @@ let weekday=["Sunday","Monday","Thuseday","Wednesday","Turseday","Friday","Satau
   console.log("last one", show1);
 
 
+  let string="mani g gattu"
+
+     let g = string.split(" ").reverse().join(" ")
+     console.log("string:", g)
+
+
+
+
+
+     
+   
+    
+
+     
+    
+   
+    
+     
+   
+     
+
+
 
 
 
