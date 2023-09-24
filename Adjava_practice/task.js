@@ -1,4 +1,4 @@
-// sum of elements with for each loop
+/*// sum of elements with for each loop
 
 let arr=[1,2,3,4,5,6]
 let sum=0;
@@ -41,5 +41,65 @@ let add= arr2.map((e,i)=>{
     return e+5
 })
 console.log ("add", add)
+
+*/
+
+let currentdate=new Date()
+console.log("currentdate", currentdate);
+
+let month=["January", "February", "March", "April", "May", "June", "July"," August", "September", "October", "November", "December"]
+
+let weekday=["Sunday","Monday","Thuseday","Wednesday","Turseday","Friday","Sataurday"]
+     if(weekday[0]="sunday"){
+           weekday[0]=" To day is Fun day"
+     }
+   console.log("cuurernt :", currentdate.getDate());
+
+   let munthnum=currentdate.getMonth();
+   let daynum=currentdate.getDay();
+   let dd= currentdate.getDate();
+   let mm=currentdate.getMonth();
+   let yy =currentdate.getFullYear();
+  
+  let y= (dd+" "+month[munthnum]+" "+yy+" and "+weekday[daynum])
+
+ console.log(y);
+
+
+//  function fun(params) {
+//     let z=0;
+//     for (let z = 0; z < Infinity; z++) {
+      
+//        y=Math.random()*10;
+//        console.log(Math.trunc(z));
+//        if(z<6){
+//             break
+//        }
+//     }
+//     console.log(z);
+//  }
+
+//   let show= fun()
+//   console.log(show);
+
+  console.log("========================")
+  function fun1(params) {
+      for (let i = 0; i < Infinity; i++) {
+        var m =  Math.trunc(Math.random() * 10) + 1;
+        // console.log(" check:",y)
+        if (m >6) {
+            break;
+         }
+         console.log(" random num", m);
+      }
+        
+      return m
+      
+  }
+  let show1= fun1()
+  console.log("last one", show1);
+
+
+
 
 

@@ -1,10 +1,10 @@
 // 1. print 9th and 10th index of array
 let arr=[1,2,3,4,5,6,7,8,9,10,11]
 
-let indexval= arr.indexOf(10)
-let indexval1= arr.indexOf(11)
+let indexval= arr[9]
+let indexval1= arr[10]
 console.log("1. print 9th and 10th index of array");
-console.log("index of",indexval,indexval1);
+console.log("index of arry",indexval,indexval1);
 
 // 2. print every element of array by map and for loop
 // in map
