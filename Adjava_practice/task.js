@@ -44,32 +44,52 @@ console.log ("add", add)
 
 */
 
-let currentdate=new Date()
+let currentdate = new Date();
 console.log("currentdate", currentdate);
 
-let month=["January", "February", "March", "April", "May", "June", "July"," August", "September", "October", "November", "December"]
+let month = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  " August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
 
-let weekday=["Sunday","Monday","Thuseday","Wednesday","Turseday","Friday","Sataurday"]
-     if(weekday[0]="sunday"){
-           weekday[0]=" To day is Fun day"
-     }
-   console.log("cuurernt :", currentdate.getDate());
+let weekday = [
+  "Sunday",
+  "Monday",
+  "Thuseday",
+  "Wednesday",
+  "Turseday",
+  "Friday",
+  "Sataurday",
+];
+if ((weekday[0] = "sunday")) {
+  weekday[0] = " To day is Fun day";
+}
+console.log("cuurernt :", currentdate.getDate());
 
-   let munthnum=currentdate.getMonth();
-   let daynum=currentdate.getDay();
-   let dd= currentdate.getDate();
-   let mm=currentdate.getMonth();
-   let yy =currentdate.getFullYear();
-  
-  let y= (dd+" "+month[munthnum]+" "+yy+" and "+weekday[daynum])
+let munthnum = currentdate.getMonth();
+let daynum = currentdate.getDay();
+let dd = currentdate.getDate();
+let mm = currentdate.getMonth();
+let yy = currentdate.getFullYear();
 
- console.log(y);
+let y = dd + " " + month[munthnum] + " " + yy + " and " + weekday[daynum];
 
+console.log(y);
 
 //  function fun(params) {
 //     let z=0;
 //     for (let z = 0; z < Infinity; z++) {
-      
+
 //        y=Math.random()*10;
 //        console.log(Math.trunc(z));
 //        if(z<6){
@@ -82,46 +102,35 @@ let weekday=["Sunday","Monday","Thuseday","Wednesday","Turseday","Friday","Satau
 //   let show= fun()
 //   console.log(show);
 
-  console.log("========================")
-  function fun1(params) {
-      for (let i = 0; i < Infinity; i++) {
-        var m =  Math.trunc(Math.random() * 10) + 1;
-        // console.log(" check:",y)
-        if (m >6) {
-            break;
-         }
-         console.log(" random num", m);
-      }
-        
-      return m
-      
+console.log("========================");
+function fun1(params) {
+  for (let i = 0; i < Infinity; i++) {
+    var m = Math.trunc(Math.random() * 10) + 1;
+    // console.log(" check:",y)
+    if (m > 6) {
+      break;
+    }
+    console.log(" random num", m);
   }
-  let show1= fun1()
-  console.log("last one", show1);
 
-
-  let string="mani g gattu"
-
-     let g = string.split(" ").reverse().join(" ")
-     console.log("string:", g)
+  return m;
+}
+let show1 = fun1();
+console.log("last one", show1);
 
 
 
 
+let string="mani g gattu"
 
-     
-   
-    
-
-     
-    
-   
-    
-     
-   
-     
+let g = string.split(" ").reverse().join(" ") .split("") .reverse() .join("")
+console.log("string:", g)
 
 
-
-
-
+for (let i = 1; i < 7; i++) {
+  // let y = i
+  // console.log("🚀 ~ file: task5.js:3 ~ y:", y)
+  let x = Math.round(Math.random()*i)+1;
+  console.log("🚀 ~ file: task5.js:3 ~ x:", x)
+ 
+}
