@@ -42,7 +42,7 @@ let add= arr2.map((e,i)=>{
 })
 console.log ("add", add)
 
-*/
+
 
 let currentdate = new Date();
 console.log("currentdate", currentdate);
@@ -134,3 +134,17 @@ for (let i = 1; i < 7; i++) {
   console.log("🚀 ~ file: task5.js:3 ~ x:", x)
  
 }
+*/
+
+let current =new Date()
+
+setInterval(()=>{
+  console.log(current);
+},7000)
+
+setTimeout(()=>{
+  clearInterval(current)
+},40000)
+
+
+
