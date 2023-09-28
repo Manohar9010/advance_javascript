@@ -136,15 +136,36 @@ for (let i = 1; i < 7; i++) {
 }
 */
 
-let current =new Date()
+// let current =new Date()
 
-setInterval(()=>{
-  console.log(current);
-},7000)
+// let set=  setInterval(()=>{
+//    // const element = array[i];
+    
+//     console.log(current);
 
-setTimeout(()=>{
-  clearInterval(current)
-},40000)
+// },2000)
+
+// setTimeout(()=>{
+//   clearInterval(set)
+// },9000)
+
+let intervalId;
+let count = 0;
+
+function printTime() {
+  const now = new Date();
+  console.log(now.toLocaleString());
+  count++;
+  if (count >= 5) {
+    clearInterval(intervalId);
+  }
+}
+
+intervalId = setInterval(printTime, 2000);
+
+
+
+
 
 
 
