@@ -10,3 +10,6 @@ console.log("🚀 ~ file: index.js:8 ~ y:", y)
 require("./test") //only call the file 
 
 
+
+
+
