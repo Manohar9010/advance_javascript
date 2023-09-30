@@ -148,6 +148,20 @@ for (let i = 0; i < family.child.length; i++) {
 
 console.log(sonNames);
 
+// -> all son of father/uncle's
+let sonNames1 = [];
+
+for (let i = 0; i < family.child.length; i++) {
+  for (let j = 0; j < family.child[i].child.length; j++) {
+    sonNames1.push(family.child[i].child[j].name);
+  }
+}
+
+console.log(sonNames1);
+
+
+
+
 
 
 
