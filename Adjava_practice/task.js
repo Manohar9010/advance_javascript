@@ -149,19 +149,22 @@ for (let i = 1; i < 7; i++) {
 //   clearInterval(set)
 // },9000)
 
-let intervalId;
-let count = 0;
+// let intervalId;
+// let count = 0;
 
-function printTime() {
-  const now = new Date();
-  console.log(now.toLocaleString());
-  count++;
-  if (count >= 5) {
-    clearInterval(intervalId);
-  }
-}
+// function printTime() {
+//   const now = new Date();
+//   console.log(now.toLocaleString());
+//   count++;
+//   if (count >= 5) {
+//     clearInterval(intervalId);
+//   }
+// }
 
-intervalId = setInterval(printTime, 2000);
+// intervalId = setInterval(printTime, 2000);
+
+
+
 
 
 
