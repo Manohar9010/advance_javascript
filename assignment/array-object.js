@@ -139,6 +139,20 @@ for (let i = 0; i < family.child.length; i++) {
 
 console.log(vehicleNames);
 
+console.log("vehicle details of each family member");
+function fun() {
+    let vee=family.child.filter((e)=>{
+            // console.log(e);
+            return e?.vehicle
+    })
+    // console.log("fun ~ vee:", vee)
+      let soo =vee.filter((e)=>{
+        console.log(e?.vehicle);
+      })
+}
+
+ fun()
+
 // -> all son of your dada name only
 let sonNames = [];
 
