@@ -10,7 +10,8 @@ let user ={
 
 }
 
-let y =user?.addresse?.plot?.no?.mi
+let y =user?.addresse?.plot?.plot1?.
+mubers
 console.log("y:", y)
 
 user?.print?.()

@@ -16,3 +16,15 @@ console.log("d:", d)
 console.log("c:", c)
 console.log("b:", b)
 console.log("a:", a)
+
+
+function returnObj() {
+    return {
+      name: "--->uv",
+      city: "--->surat",
+    };
+  }
+  
+  const obj2 = returnObj();
+  console.log("obj2", obj2);
+  
