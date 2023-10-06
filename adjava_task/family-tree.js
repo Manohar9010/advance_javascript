@@ -99,34 +99,40 @@ let family={
     ]
 }
 
-console.log(family.name);
-console.log(family.child[1].name);
-console.log(family.child[1].child[1].name);
-console.log(family.child[2].vehicle[0].name);
-console.log(family.child[0].vehicle[0].number);
+// console.log(family.name);
+// console.log(family.child[1].name);
+// console.log(family.child[1].child[1].name);
+// console.log(family.child[2].vehicle[0].name);
+// console.log(family.child[0].vehicle[0].number);
 
 // with map 
 // second child vehicle name
-console.log("------second child vehicle name-------");
+// console.log("------second child vehicle name-------");
 let vname= family.child[1].vehicle.map((e)=>{
     return e.name
 })
 
-console.log(vname);
+// console.log(vname);
 
 // sum of third child sons age 
   
-console.log("--------sum of third child sons age--------");
+// console.log("--------sum of third child sons age--------");
 let age1= family.child[2].child.map((e)=>{
     return e.age
 })
 
-    console.log("age", age1)
+    // console.log("age", age1)
     let total=age1.reduce((lastev,e)=>{
         return lastev+e
     },0)
-    console.log("total of age=",total);
+    // console.log("total of age=",total);
  
 
+// find child name by id
 
+function fun1(params) {
+    let show= family.child.id
+    console.log("fun1 ~ show:", show)
+}
+fun1()
 
