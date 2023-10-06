@@ -14,7 +14,7 @@ function fun2(cb2) {
 
 
 function fun3() {
-    console.log("=====fum3");
+    console.log("=====fum3")
 }
 
 fun1(fun3,fun2)
