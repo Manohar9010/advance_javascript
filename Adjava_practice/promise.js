@@ -73,7 +73,7 @@ const m1= new Promise((resolve,rejeact)=>{
    return 
    })
    .then((res1)=>{
-    .
+    
     
        console.log("=====>",res1);
        return [1,2,3,4,5,6,]
