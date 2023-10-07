@@ -131,7 +131,7 @@ let age1= family.child[2].child.map((e)=>{
 // find child name by id
 
 function fun1(params) {
-    let show= family.child.id
+    let show= family.child[0].child
     console.log("fun1 ~ show:", show)
 }
 fun1()
