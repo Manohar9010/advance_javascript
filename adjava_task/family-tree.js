@@ -130,9 +130,21 @@ let age1= family.child[2].child.map((e)=>{
 
 // find child name by id
 
-function fun1(params) {
-    let show= family.child[0].child
-    console.log("fun1 ~ show:", show)
-}
-fun1()
+function find1(id) {
+    let familydata=family.child.find((e)=>{
+        
+        return e?.id===id
+    })
 
+    if(familydata){
+        return familydata.child.filter((e)=>{
+            console.log(e.name);
+        })
+       
+    }else{
+        return"not prasent in" 
+    }
+}
+ 
+  let show= find1(11)
+ 
