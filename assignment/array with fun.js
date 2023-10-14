@@ -166,3 +166,118 @@ return reversedArr
 }
 
 console.log("reverse with loop" ,print18());
+
+
+console.log("==========task-2===========");
+let arra=[1,2,3,6,7,9,3,56,8]
+// 1. give all value which can devided by 2 - not use filter
+     function fundivied() {
+        
+         let show7= arra.map((e)=>{
+             return e/2
+         })
+         console.log("goooooo", show7);
+     }      
+     fundivied()
+
+     // 2. give all value above 3 by use of filter
+function funabove() {
+    
+    let above=arra.filter((e)=>{
+        return e>3
+    })
+    console.log("give all value above 3 by use of filter  :", above);
+}
+funabove()
+
+
+// 3. give index of 56
+function funindex() {
+    
+    let index56=arra.indexOf(56)
+    
+    console.log(" give index of 56", index56);
+}
+funindex()
+
+
+// 4. give true/false result when check given value is exists in array or not
+
+function funtruefalse() {
+    
+    let find= arra.includes(100)
+       console.log(find);
+       let find1= arra.includes(56)
+       console.log(find1);
+}
+funtruefalse()
+
+console.log("==========task-3===========");
+
+//    1. ['i','am', 'urvish'] ==> want ['urvish','am','i']
+  
+function funreverse() {
+    
+    let string=['i','am','urvish']
+       string.reverse()
+       console.log(string);
+    
+        string.concat()
+}
+funreverse()
+
+// 2. want "i am urvish" without use join method
+function funconver() {
+    
+    const arrstring = ['i', 'am', 'urvish'];
+    let str = '';
+    
+    for (let i = 0; i < arrstring.length; i++) {
+      str += arrstring[i];
+      if (i !== arrstring.length - 1) {
+        str += ' ';
+      }
+    }
+    console.log( str); 
+}
+funconver()
+
+
+console.log("==========task-4===========");
+
+
+// ['i','am', 'urvish'] ==> want ['hsivru','ma','i'] by use of loop
+
+function funnamereverse() {
+    
+    const arr2 = ['i', 'am', 'urvish'];
+    let str1 = '';
+    
+    for (let i = arr2.length - 1; i >= 0; i--) {
+      let reversedWord = '';
+      for (let j = arr2[i].length - 1; j >= 0; j--) {
+        reversedWord += arr2[i][j];
+      }
+      str1 += reversedWord;
+      if (i !== 0) {
+        str1 += ' ';
+      }
+    }
+    
+    console.log(str1);
+}
+funnamereverse()
+
+
+// uv hello world  =>  world hello uv
+
+function funhello(params) {
+    let str2=["uv","hello","world"]
+    
+    let show8= str2.reverse().join(' ');
+    
+    console.log(show8);
+    
+}
+
+funhello()

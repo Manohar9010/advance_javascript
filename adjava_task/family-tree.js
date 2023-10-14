@@ -99,34 +99,52 @@ let family={
     ]
 }
 
-console.log(family.name);
-console.log(family.child[1].name);
-console.log(family.child[1].child[1].name);
-console.log(family.child[2].vehicle[0].name);
-console.log(family.child[0].vehicle[0].number);
+// console.log(family.name);
+// console.log(family.child[1].name);
+// console.log(family.child[1].child[1].name);
+// console.log(family.child[2].vehicle[0].name);
+// console.log(family.child[0].vehicle[0].number);
 
 // with map 
 // second child vehicle name
-console.log("------second child vehicle name-------");
+// console.log("------second child vehicle name-------");
 let vname= family.child[1].vehicle.map((e)=>{
     return e.name
 })
 
-console.log(vname);
+// console.log(vname);
 
 // sum of third child sons age 
   
-console.log("--------sum of third child sons age--------");
+// console.log("--------sum of third child sons age--------");
 let age1= family.child[2].child.map((e)=>{
     return e.age
 })
 
-    console.log("age", age1)
+    // console.log("age", age1)
     let total=age1.reduce((lastev,e)=>{
         return lastev+e
     },0)
-    console.log("total of age=",total);
+    // console.log("total of age=",total);
  
 
+// find child name by id
 
+function find1(id) {
+    let familydata=family.child.find((e)=>{
+        
+        return e?.id===id
+    })
 
+    if(familydata){
+        return familydata.child.filter((e)=>{
+            console.log(e.name);
+        })
+       
+    }else{
+        return"not prasent in" 
+    }
+}
+ 
+  let show= find1(11)
+ 

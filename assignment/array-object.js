@@ -161,7 +161,7 @@ for (let i = 0; i < family.child.length; i++) {
 }
 
 console.log(sonNames);
-
+             
 // -> all son of father/uncle's
 let sonNames1 = [];
 
