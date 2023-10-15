@@ -1,4 +1,4 @@
-let jdata=require("../assignment/product.json")
+let jdata=require("../assignment/data.json")
 // console.log("jdata:", jdata)
 // function fun1(koo) {
 //     let x=jdata.map((e)=>{
@@ -45,9 +45,25 @@ console.log("tota ~ tota:", tota)
 */
 
 // javascript
-const highDiscountItems = jdata.filter(item => {
-    if (item.discountPercentage > 17) {
-      return { brand: item.brand, price: item.price };
+
+let arr =[];
+jdata.map((obje)=>{
+    let index=arr.findIndex((ife)=>ife.state===obje.state_name);
+    if(index===-1){
+        arr.push({
+            state:obje.state_name,
+            population:+obje.population
+        })
+    }else{
+        arr[index].population+= +obje.population
     }
-});
-console.log("highDiscountItems ~ highDiscountItems:", highDiscountItems)
+})
+// console.log("jdata.map ~ arr:", arr)
+
+let x= arr.sort((a,b)=>{
+    return b.population-a.population
+})
+console.log("x ~ x:", x)
+
+
+
