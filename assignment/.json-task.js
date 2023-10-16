@@ -9,6 +9,8 @@ function getcityname(state) {
          return e?.state_name ===state;
          
      })
+  
+     
      let cityfil=filterdata.map((e)=>{
          return e.city
      })
@@ -166,7 +168,7 @@ let  acending1= arr2.sort((a,b)=>{
 //  console.log("show1 ~ show1:", show1)
 
 let print1=show1.slice(0,5)
-console.log("print1:", print1)
+// console.log("print1:", print1)
 
 
 

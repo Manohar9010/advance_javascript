@@ -46,24 +46,30 @@ console.log("tota ~ tota:", tota)
 
 // javascript
 
-let arr =[];
-jdata.map((obje)=>{
-    let index=arr.findIndex((ife)=>ife.state===obje.state_name);
-    if(index===-1){
-        arr.push({
-            state:obje.state_name,
-            population:+obje.population
-        })
-    }else{
-        arr[index].population+= +obje.population
-    }
+// let arr =[];
+// jdata.map((obje)=>{
+//     let index=arr.findIndex((ife)=>ife.state===obje.state_name);
+//     if(index===-1){
+//         arr.push({
+//             state:obje.state_name,
+//             population:+obje.population
+//         })
+//     }else{
+//         arr[index].population+= +obje.population
+//     }
+// })
+// // console.log("jdata.map ~ arr:", arr)
+
+// let x= arr.sort((a,b)=>{
+//     return b.population-a.population
+// })
+// console.log("x ~ x:", x)
+
+let arr=[1,2,3,4,5,6]
+let z=arr.map((e)=>{
+    return e
 })
-// console.log("jdata.map ~ arr:", arr)
-
-let x= arr.sort((a,b)=>{
-    return b.population-a.population
-})
-console.log("x ~ x:", x)
-
-
+let x=z[2]+5
+console.log("x:", x)
+console.log(arr);
 
